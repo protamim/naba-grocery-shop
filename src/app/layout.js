@@ -3,8 +3,13 @@ import "./globals.css";
 import MobNav from "@/components/shared/navForMobile/MobNav";
 import TanstackProvider from "@/providers/TanstackProvider";
 import { Chakra } from "@/providers/Chakra";
+import TopBar from "@/components/shared/topBar/TopBar";
+import Navbar from "@/components/shared/navbar/Navbar";
 
-const signika = Signika({ subsets: ["latin"] });
+const signika = Signika({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata = {
   title: "Naba AI Junob | Grocery Shop",
@@ -12,12 +17,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ 
   return (
     <TanstackProvider>
       <html lang="en">
         <body className={`${signika.className} max-w-screen-2xl mx-auto`}>
           <Chakra>
+            <TopBar />
             <MobNav />
+            <Navbar />
             {children}
           </Chakra>
         </body>
