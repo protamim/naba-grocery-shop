@@ -14,6 +14,7 @@ const signika = Signika({
 export const metadata = {
   title: "Naba AI Junob | Grocery Shop",
   description: "Best grocery shop in saudi arabia",
+
 };
 
 export default function RootLayout({ children }) {
