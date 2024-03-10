@@ -7,7 +7,7 @@ const BannerHome = () => {
   return (
     <>
       <div
-        className="min-h-[65vh] relative flex justify-center items-center bg-no-repeat bg-cover"
+        className="min-h-[65vh] -z-[1] relative flex justify-center items-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bannerBg.src})` }}
       >
         <Image
