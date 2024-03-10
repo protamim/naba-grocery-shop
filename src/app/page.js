@@ -1,10 +1,14 @@
-import Image from "next/image";
+import Image from 'next/image';
+import React from 'react';
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <main className=" flex justify-center item-center">
-      <h1 className="text-4xl text-blue-600">Hello World</h1>
-      <Image src={"https://i.imgur.com/tIKR6B8.jpeg"} alt="dummy" width={400} height={400} />
+    <main className='min-h-screen flex flex-col items-center justify-center bg-red-100'>
+      <h3>Welcome to Homepage</h3>
+      <p>Home content goes here...</p>
+      <Image className='h-auto w-auto' src='https://i.imgur.com/tOYJrfH.png' width={350} height={300} alt='demo' priority />
     </main>
   );
-}
+};
+
+export default HomePage;
