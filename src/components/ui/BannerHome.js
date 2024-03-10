@@ -7,11 +7,11 @@ const BannerHome = () => {
   return (
     <>
       <div
-        className="min-h-[65vh] -z-[1] relative flex justify-center items-center bg-no-repeat bg-cover"
+        className="min-h-[65vh] overflow-hidden -z-[1] relative flex justify-center items-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bannerBg.src})` }}
       >
         <Image
-          className="hidden lg:block mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="hidden lg:block mx-auto absolute top-1/2 left-[65%] -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out duration-300 hover:scale-110"
           src={bannerImage}
           alt="Naba"
           width="100%"
