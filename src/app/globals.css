@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global styles */
+.entry-subtile {
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 0,
+    95% 50%,
+    100% 100%,
+    100% 100%,
+    62% 100%,
+    0 100%,
+    0 0,
+    0 0
+  );
+}
+.gradient-text {
+  background: #16a34a;
+  background: linear-gradient(to right, #16a34a 0%, #facc15 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
         </div>
         {/* Navigation Menu */}
-        <nav className="sticky top-0">
+        <nav className="sticky top-0 drop-shadow-sm">
           <div className="relative">
           <div className="bg-white px-4 flex items-center justify-between min-h-16">
             {/* categories button */}

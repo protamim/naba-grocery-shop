@@ -1,4 +1,4 @@
-import { Signika } from "next/font/google";
+import { Signika, Leckerli_One } from "next/font/google";
 import "./globals.css";
 import MobNav from "@/components/shared/navForMobile/MobNav";
 import TanstackProvider from "@/providers/TanstackProvider";
@@ -10,6 +10,11 @@ const signika = Signika({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
+
+export const leckerli = Leckerli_One({
+  subsets: ['latin'],
+  weight: ['400']
+})
 
 export const metadata = {
   title: "Naba AI Junob | Grocery Shop",
