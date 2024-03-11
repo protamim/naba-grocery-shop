@@ -19,6 +19,7 @@ export const leckerli = Leckerli_One({
 export const metadata = {
   title: "Naba AI Junob | Grocery Shop",
   description: "Best grocery shop in saudi arabia",
+
 };
 
 export default function RootLayout({ children }) {
