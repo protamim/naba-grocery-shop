@@ -78,7 +78,6 @@ const ProductsAdsSection = () => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </>
