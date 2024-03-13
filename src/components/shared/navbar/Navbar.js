@@ -7,7 +7,7 @@ import { CiHeart, CiShoppingCart, CiUser } from "react-icons/ci";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 import { SlArrowDown } from "react-icons/sl";
 import { CiDiscount1 } from "react-icons/ci";
-import useProducts from "@/app/hooks/useProducts";
+import useProducts from "@/hooks/useProducts";
 
 const Navbar = () => {
   const { data: products, isLoading, error } = useProducts();

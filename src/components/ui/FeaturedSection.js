@@ -1,5 +1,5 @@
 "use client";
-import useProducts from "@/app/hooks/useProducts";
+import useProducts from "@/hooks/useProducts";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import ProductCard from "./ProductCard";
 import { useCallback, useEffect } from "react";
@@ -23,8 +23,8 @@ const FeaturedSection = () => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-  if (isLoading) return <h2>Loading...</h2>;
-  if (error) return <h2>Error occoured!!</h2>;
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>An error has occurred: {error.message}</div>;
   // console.log(products);
 
   return (

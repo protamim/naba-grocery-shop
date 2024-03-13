@@ -1,4 +1,4 @@
-import useProducts from "@/app/hooks/useProducts";
+import useProducts from "@/hooks/useProducts";
 import DropDownSearchBar from "@/components/ui/DropDownSearchBar";
 import {
   Accordion,

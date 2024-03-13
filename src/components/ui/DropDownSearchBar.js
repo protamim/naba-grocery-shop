@@ -1,4 +1,4 @@
-import useProducts from "@/app/hooks/useProducts";
+import useProducts from "@/hooks/useProducts";
 
 const { CiSearch } = require("react-icons/ci");
 
