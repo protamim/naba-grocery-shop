@@ -7,7 +7,7 @@ const BannerHome = () => {
   return (
     <>
       <div
-        className="min-h-[65vh] overflow-hidden -z-[1] relative flex justify-center items-center bg-no-repeat bg-cover"
+        className="min-h-[50vh] lg:min-h-[65vh] overflow-hidden -z-[1] relative flex justify-center items-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bannerBg.src})` }}
       >
         <Image
@@ -19,14 +19,19 @@ const BannerHome = () => {
           priority
         />
         <div className="absolute w-full h-auto pl-4 flex gap-y-3 flex-col items-start">
-          <h4 className={`${leckerli.className} bg-yellow-400 py-2 pl-5 pr-8 entry-subtile text-3xl rounded-md mb-5`}>Garden Fresh Fruits</h4>
-          <h2 className={`${leckerli.className} text-8xl text-black`}>Feel The Taste</h2>
-          <p className="text-lg font-semibold gradient-text max-w-xl mb-4">
+
+          <h4 className={`${leckerli.className} bg-yellow-400 py-2 pl-5 pr-8 entry-subtile text-xl sm:text-2xl lg:text-3xl rounded-md mb-5`}>Garden Fresh Fruits</h4>
+
+          <h2 className={`${leckerli.className} text-5xl sm:text-7xl lg:text-8xl text-black`}>Feel The Taste</h2>
+
+          <p className="text-lg font-semibold gradient-text max-w-sm md:max-w-xl mb-4">
             When an unknown printer took a galley of type and scrambled it to
             make ype specimen urvived not only five centurieswhen an unknown
             printer.
           </p>
+
           <ActionButton>Shop Now</ActionButton>
+
         </div>
       </div>
     </>
