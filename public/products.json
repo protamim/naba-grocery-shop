@@ -18,7 +18,7 @@
       "size": "200g",
       "weight": "0.2 kg",
       "price": 2.99,
-      "rating": 4.6,
+      "rating": 2.6,
       "discountPercent": 0
     },
     {
@@ -40,7 +40,7 @@
       "size": "12 eggs",
       "weight": "0.75 kg",
       "price": 5.99,
-      "rating": 4.8,
+      "rating": 3.8,
       "discountPercent": 0
     },
     {
@@ -51,7 +51,7 @@
       "size": "1 loaf",
       "weight": "0.5 kg",
       "price": 3.49,
-      "rating": 4.2,
+      "rating": 2.2,
       "discountPercent": 0
     },
     {
@@ -106,7 +106,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 5.49,
-      "rating": 4.3,
+      "rating": 3.3,
       "discountPercent": 0
     },
     {
@@ -117,7 +117,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 3.99,
-      "rating": 4.5,
+      "rating": 3.5,
       "discountPercent": 0
     },
     {
@@ -128,7 +128,7 @@
       "size": "12 eggs",
       "weight": "0.75 kg",
       "price": 6.99,
-      "rating": 4.8,
+      "rating": 2.8,
       "discountPercent": 10
     },
     {
@@ -139,7 +139,7 @@
       "size": "1 pack",
       "weight": "0.25 kg",
       "price": 4.99,
-      "rating": 4.6,
+      "rating": 2.6,
       "discountPercent": 0
     },
     {
@@ -150,7 +150,7 @@
       "size": "1 each",
       "weight": "0.2 kg",
       "price": 2.49,
-      "rating": 4.2,
+      "rating": 3.2,
       "discountPercent": 0
     },
     {
@@ -161,7 +161,7 @@
       "size": "1 gallon",
       "weight": "3.78 kg",
       "price": 4.99,
-      "rating": 4.6,
+      "rating": 3.6,
       "discountPercent": 0
     },
     {
@@ -172,7 +172,7 @@
       "size": "1 pint",
       "weight": "0.25 kg",
       "price": 4.99,
-      "rating": 4.4,
+      "rating": 1.4,
       "discountPercent": 0
     },
     {
@@ -183,7 +183,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 9.99,
-      "rating": 4.7,
+      "rating": 3.7,
       "discountPercent": 0
     },
     {
@@ -194,7 +194,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 2.49,
-      "rating": 4.4,
+      "rating": 2.4,
       "discountPercent": 0
     },
     {
@@ -205,7 +205,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 3.49,
-      "rating": 4.3,
+      "rating": 3.3,
       "discountPercent": 0
     },
     {
@@ -216,7 +216,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 12.99,
-      "rating": 4.5,
+      "rating": 5,
       "discountPercent": 0
     },
     {
@@ -227,7 +227,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 3.99,
-      "rating": 4.4,
+      "rating": 1.4,
       "discountPercent": 0
     },
     {
@@ -238,7 +238,7 @@
       "size": "16 oz",
       "weight": "0.45 kg",
       "price": 9.99,
-      "rating": 4.7,
+      "rating": 3.7,
       "discountPercent": 0
     },
     {
@@ -249,7 +249,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 5.99,
-      "rating": 4.5,
+      "rating": 1.5,
       "discountPercent": 0
     },
     {
@@ -260,7 +260,7 @@
       "size": "1 lb",
       "weight": "0.45 kg",
       "price": 1.99,
-      "rating": 4.5,
+      "rating": 3.5,
       "discountPercent": 0
     },
     {
@@ -271,7 +271,7 @@
       "size": "1 bulb",
       "weight": "0.1 kg",
       "price": 1.49,
-      "rating": 4.6,
+      "rating": 2.6,
       "discountPercent": 0
     },
     {
