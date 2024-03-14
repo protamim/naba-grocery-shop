@@ -6,6 +6,7 @@ import ProductsAdsSection from "@/components/ui/ProductsAdsSection";
 import TopRatedSection from "@/components/ui/TopRatedSection";
 import TrendingSection from "@/components/ui/TrendingSection";
 import BlogSection from "@/components/ui/BlogSection";
+import FeaturesSection from "@/components/ui/FeaturesSection";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <TrendingSection />
       <TopRatedSection />
       <BlogSection />
+      <FeaturesSection />
     </main>
   );
 };
