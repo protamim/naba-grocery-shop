@@ -5,7 +5,14 @@ import { BsCart, BsHeart, BsSearch } from "react-icons/bs";
 import { ImLoop2 } from "react-icons/im";
 import ReactStars from "react-rating-stars-component";
 
-const ProductCard = ({ product, parentClass, imageClass, priceClass, optionsClass, categoryClass }) => {
+const ProductCard = ({
+  product,
+  parentClass,
+  imageClass,
+  priceClass,
+  optionsClass,
+  categoryClass,
+}) => {
   const {
     productImage,
     productName,
@@ -31,12 +38,16 @@ const ProductCard = ({ product, parentClass, imageClass, priceClass, optionsClas
             className={`w-full h-60 object-cover object-center rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 ${imageClass}`}
           />
           {/* category */}
-          <h5 className={`absolute left-2 top-2 text-stone-400 font-normal retro-text text-sm cursor-pointer transition-all duration-300 ease-in-out hover:text-green-600 ${categoryClass}`}>
+          <h5
+            className={`absolute left-2 top-2 text-stone-400 font-normal retro-text text-sm cursor-pointer transition-all duration-300 ease-in-out hover:text-green-600 ${categoryClass}`}
+          >
             {category}
           </h5>
-          
+
           {/* Option Icons */}
-          <div className={`absolute right-2 top-3 flex flex-col items-center gap-y-2 ${optionsClass}`}>
+          <div
+            className={`absolute right-2 top-3 flex flex-col items-center gap-y-2 ${optionsClass}`}
+          >
             <Tooltip
               label="Add to wishlist"
               placement="left"
@@ -102,9 +113,19 @@ const ProductCard = ({ product, parentClass, imageClass, priceClass, optionsClas
             <h6 className="text-stone-500">({rating})</h6>
           </div>
           {/* Price */}
-          <div className={`flex items-center gap-x-2 text-2xl text-stone-700 font-medium ${priceClass}`}>
+          <div
+            className={`flex items-center gap-x-2 text-2xl text-stone-700 font-medium ${priceClass}`}
+          >
             <h4 className="">${price}</h4>-
-            <h4>${(price - (price / 100) * discountPercent).toFixed(2)}</h4>
+            <h4>
+              ${discountPercent === 0 ? (
+                (price - (price / 100) * discountPercent).toFixed(2)
+              ) : (
+                <del>
+                  {(price - (price / 100) * discountPercent).toFixed(2)}
+                </del>
+              )}
+            </h4>
           </div>
         </div>
       </div>

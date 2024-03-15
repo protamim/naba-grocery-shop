@@ -24,6 +24,8 @@ import blog5 from './blog-5.jpg';
 import blog6 from './blog-6.jpg';
 import blog7 from './blog-7.jpg';
 import blog8 from './blog-8.jpg';
+import playStore from './playstore-icon.jpg';
+import appleStore from './app-stoe.jpg';
 
 
 
@@ -53,5 +55,7 @@ export {
   blog5,
   blog6,
   blog7,
-  blog8
+  blog8,
+  playStore,
+  appleStore
 };

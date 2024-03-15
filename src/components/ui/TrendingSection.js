@@ -18,6 +18,7 @@ const TrendingSection = () => {
     <>
       <section className="pb-10 px-4">
         <div className="flex flex-col gap-y-6 lg:gap-x-4 lg:flex-row">
+
           {/* Left side */}
           <div className="w-full lg:w-[calc(100%/4)]">
             {/* Ads cards with sub heading */}
@@ -47,6 +48,7 @@ const TrendingSection = () => {
               </div>
             </div>
           </div>
+
           {/* Middle */}
           <div className="w-full lg:w-[calc(100%/2)] ">
             {/* Top */}
@@ -64,10 +66,11 @@ const TrendingSection = () => {
             {/* Products */}
             <div className="grid grid-cols-1 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-4">
               {products.slice(30, 33).map((product) => (
-                <ProductCard key={product.id} product={product} parentClass='pl-0' />
+                <ProductCard key={product.id} product={product} parentClass='!pl-0' priceClass='!text-lg' />
               ))}
             </div>
           </div>
+
           {/* Right Side */}
           <div className="w-full lg:w-[calc(100%/4)] h-[445px] flex flex-col gap-y-4">
            {/* Ads cards with sub heading */}
@@ -125,6 +128,7 @@ const TrendingSection = () => {
 
 
           </div>
+
         </div>
       </section>
     </>

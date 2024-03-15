@@ -61,7 +61,7 @@ const FeaturedSection = () => {
               <div className="flex -ml-4">
                 {/* Product card */}
                 {products.map((prod) => (
-                  <ProductCard key={prod.id} product={prod} />
+                  <ProductCard key={prod.id} product={prod} priceClass='!text-xl' />
                 ))}
               </div>
             </div>
