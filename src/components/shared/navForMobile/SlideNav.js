@@ -22,7 +22,7 @@ import { FiMinus } from "react-icons/fi";
 const SlideNav = ({toggle}) => {
   return (
     <>
-      <div className={`bg-white px-4 space-y-5 pb-6 transition-all duration-300 w-full absolute top-full ${toggle ? 'left-0' : '-left-full'}`}>
+      <div className={`bg-white px-4 space-y-5 pb-6 transition-all duration-300 w-full absolute top-full z-50 ${toggle ? 'left-0' : '-left-full'}`}>
         <DropDownSearchBar />
         <MenuItem />
         <ShopAddress />
