@@ -7,7 +7,7 @@ const BannerHome = () => {
   return (
     <>
       <div
-        className="min-h-[50vh] lg:min-h-[65vh] overflow-hidden -z-[1] relative flex justify-center items-center bg-no-repeat bg-cover"
+        className="min-h-[50vh] lg:min-h-[65vh] overflow-hidden relative flex justify-center items-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bannerBg.src})` }}
       >
         <Image

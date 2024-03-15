@@ -23,8 +23,8 @@ const Navbar = () => {
   // console.log(getCategory);
   return (
     <>
-      <header className="hidden lg:block">
-        {/* Navbar */}
+      {/* Navbar */}
+      <div className="hidden lg:block">
         <div className="flex gap-x-6 justify-between items-center min-h-20 border-b border-stone-300 px-4">
           {/* Logo */}
           <Link href="/" className="text-3xl text-black">
@@ -71,12 +71,12 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Navigation Menu */}
-        <nav className="sticky top-0 drop-shadow-sm">
-          <div className="relative">
+      {/* Navigation Menu */}
+      <nav className="sticky top-0 hidden lg:block drop-shadow-sm z-[9999]">
+        <div className="relative">
           <div className="bg-white px-4 flex items-center justify-between min-h-16">
-            
             {/* categories button */}
             <div className="relative flex items-center gap-x-2 group/category border border-stone-300 rounded-full px-6 py-2 hover:cursor-pointer ">
               <HiMiniBars3CenterLeft className="text-xl" />
@@ -96,7 +96,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </div>
-            
+
             {/* NAV ITEMS */}
             <ul className="flex items-center gap-x-6">
               {/* Home Link */}
@@ -789,7 +789,6 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-
             </ul>
 
             {/* Discount */}
@@ -799,11 +798,9 @@ const Navbar = () => {
               </span>
               <span className="font-medium text-lg">Weekly Discount!!</span>
             </div>
-
           </div>
-          </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
     </>
   );
 };
