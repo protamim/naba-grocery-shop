@@ -20,14 +20,14 @@ const Navbar = () => {
     return arr.findIndex((item) => item.category === obj.category) === index;
   });
 
-  console.log(getCategory);
+  // console.log(getCategory);
   return (
     <>
       <header className="hidden lg:block">
         {/* Navbar */}
         <div className="flex gap-x-6 justify-between items-center min-h-20 border-b border-stone-300 px-4">
           {/* Logo */}
-          <Link href="#" className="text-3xl text-black">
+          <Link href="/" className="text-3xl text-black">
             Naba
           </Link>
           {/* Hotline */}
@@ -43,16 +43,18 @@ const Navbar = () => {
               <span>+971-50-1234567</span>
             </div>
           </Link>
+
           {/* Search bar */}
           <div className="-mt-3">
             <DropDownSearchBar />
           </div>
+
           {/* header Icons */}
           <div className="flex gap-x-2 items-center justify-end">
             {/* account */}
             <div className="pr-3">
               <Link
-                href="#"
+                href="/login"
                 className="flex items-center justify-center gap-x-2 transition-all duration-300 hover:text-green-600"
               >
                 <span className="border border-stone-400 p-2 rounded-full">
@@ -69,10 +71,12 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
         {/* Navigation Menu */}
         <nav className="sticky top-0 drop-shadow-sm">
           <div className="relative">
           <div className="bg-white px-4 flex items-center justify-between min-h-16">
+            
             {/* categories button */}
             <div className="relative flex items-center gap-x-2 group/category border border-stone-300 rounded-full px-6 py-2 hover:cursor-pointer ">
               <HiMiniBars3CenterLeft className="text-xl" />
@@ -92,6 +96,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </div>
+            
             {/* NAV ITEMS */}
             <ul className="flex items-center gap-x-6">
               {/* Home Link */}
@@ -136,6 +141,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
+
               {/* Page Link */}
               <li className="relative group/dropdown">
                 <Link href="#" className="flex items-center gap-x-2 text-lg">
@@ -202,6 +208,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
+
               {/* Shop Link */}
               <li className="group/dropdown overflow-hidden">
                 <Link href="#" className="flex items-center gap-x-2 text-lg">
@@ -522,6 +529,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </li>
+
               {/* Vendor Link */}
               <li className="relative group/dropdown">
                 <Link href="#" className="flex items-center gap-x-2 text-lg">
@@ -564,6 +572,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
+
               {/* Elements Link */}
               <li className="relative group/dropdown">
                 <Link href="#" className="flex items-center gap-x-2 text-lg">
@@ -698,6 +707,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </li>
+
               {/* Blog Link */}
               <li className="relative group/dropdown">
                 <Link href="#" className="flex items-center gap-x-2 text-lg">
@@ -772,13 +782,16 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
+
               {/* Contact Link */}
               <li>
                 <Link href="#" className="text-lg">
                   Contact
                 </Link>
               </li>
+
             </ul>
+
             {/* Discount */}
             <div className="flex items-center gap-x-3">
               <span className="text-green-700 text-2xl">
@@ -786,6 +799,7 @@ const Navbar = () => {
               </span>
               <span className="font-medium text-lg">Weekly Discount!!</span>
             </div>
+
           </div>
           </div>
         </nav>

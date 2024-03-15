@@ -21,7 +21,7 @@ const MobNav = () => {
       <nav className="bg-slate-100 relative lg:hidden">
         <div className="container mx-auto">
           <div className="flex items-center justify-between py-4">
-            <Link href="#" className="text-2xl">
+            <Link href="/" className="text-2xl">
               <span>Naba</span>
             </Link>
             <HeaderIcons handleToggle={handleToggle} toggle={toggle} />
