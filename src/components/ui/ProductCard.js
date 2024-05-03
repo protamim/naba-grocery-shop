@@ -1,9 +1,11 @@
+"use client";
+import { addProductToLS, getShoppingCart } from "@/utils/localStorage";
 import { Tooltip } from "@chakra-ui/react";
 import Image from "next/image";
-import React from "react";
 import { BsCart, BsHeart, BsSearch } from "react-icons/bs";
 import { ImLoop2 } from "react-icons/im";
 import ReactStars from "react-rating-stars-component";
+import Swal from "sweetalert2";
 
 const ProductCard = ({
   product,
@@ -14,6 +16,7 @@ const ProductCard = ({
   categoryClass,
 }) => {
   const {
+    id,
     productImage,
     productName,
     category,
@@ -21,6 +24,26 @@ const ProductCard = ({
     rating,
     discountPercent,
   } = product;
+
+
+  const handleAddToCart = (productID) => {
+    // console.log(productID);
+    const shoppingCart = getShoppingCart();
+    if (shoppingCart.includes(productID)) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "You have already added it"
+      });
+    } else {
+      addProductToLS(productID);
+      Swal.fire({
+        icon: 'success',
+        text: 'Added to the cart'
+      });
+    }
+
+  };
 
   return (
     <>
@@ -61,15 +84,18 @@ const ProductCard = ({
             </Tooltip>
 
             <Tooltip
-              label="Select Options"
+              label="Add to cart"
               placement="left"
               hasArrow
               bg="#1B8057"
               borderRadius="0.24rem"
             >
-              <span className="text-green-700 bg-white rounded-md cursor-pointer p-2 transition-all ease-in-out duration-300 hover:bg-green-700 hover:text-white">
+              <button
+                onClick={() => handleAddToCart(id)}
+                className="text-green-700 bg-white rounded-md cursor-pointer p-2 transition-all ease-in-out duration-300 hover:bg-green-700 hover:text-white"
+              >
                 <BsCart />
-              </span>
+              </button>
             </Tooltip>
 
             <Tooltip
@@ -118,7 +144,8 @@ const ProductCard = ({
           >
             <h4 className="">${price}</h4>-
             <h4>
-              ${discountPercent === 0 ? (
+              $
+              {discountPercent === 0 ? (
                 (price - (price / 100) * discountPercent).toFixed(2)
               ) : (
                 <del>

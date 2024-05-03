@@ -28,14 +28,14 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={`${signika.className} max-w-screen-2xl mx-auto`}>
           <Chakra>
-            {/* Header */}
-            <TopBar />
-            <MobNav />
-            <Navbar />
-            {/* Main */}
-            {children}
-            {/* Footer */}
-            <Footer />
+              {/* Header */}
+              <TopBar />
+              <MobNav />
+              <Navbar />
+              {/* Main */}
+              {children}
+              {/* Footer */}
+              <Footer />
           </Chakra>
         </body>
       </html>

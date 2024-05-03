@@ -2,25 +2,25 @@
 import DropDownSearchBar from "@/components/ui/DropDownSearchBar";
 import IconBadge from "@/components/ui/IconBadge";
 import Link from "next/link";
-import { MdArrowDownward, MdPhoneInTalk } from "react-icons/md";
+import { MdPhoneInTalk } from "react-icons/md";
 import { CiHeart, CiShoppingCart, CiUser } from "react-icons/ci";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 import { SlArrowDown } from "react-icons/sl";
 import { CiDiscount1 } from "react-icons/ci";
 import useProducts from "@/hooks/useProducts";
+import useCart from "@/hooks/useCart";
+import { useDisclosure } from "@chakra-ui/react";
 
 const Navbar = () => {
-  const { data: products, isLoading, error } = useProducts();
+  const { data: products } = useProducts();
+  const { cart } = useCart();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-  if (isLoading) return <div>Loading...</div>;
-
-  if (error) return <div>An error has occurred: {error.message}</div>;
-
+  // Filters the categories
   const getCategory = products?.filter((obj, index, arr) => {
     return arr.findIndex((item) => item.category === obj.category) === index;
   });
 
-  // console.log(getCategory);
   return (
     <>
       {/* Navbar */}
@@ -66,7 +66,7 @@ const Navbar = () => {
             <hr className="w-[1px] h-5 bg-stone-400" />
             {/* Icons */}
             <div className="flex gap-x-5 items-center ml-3">
-              <IconBadge icon={<CiShoppingCart />} text="0" />
+              <IconBadge icon={<CiShoppingCart />} text={cart.length} cart={cart} isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
               <IconBadge icon={<CiHeart />} text="0" />
             </div>
           </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Menu */}
-      <nav className="sticky top-0 hidden lg:block drop-shadow-sm z-[9999]">
+      <nav className="sticky top-0 hidden lg:block drop-shadow-sm z-[99]">
         <div className="relative">
           <div className="bg-white px-4 flex items-center justify-between min-h-16">
             {/* categories button */}

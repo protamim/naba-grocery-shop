@@ -7,6 +7,7 @@ import TopRatedSection from "@/components/ui/TopRatedSection";
 import TrendingSection from "@/components/ui/TrendingSection";
 import BlogSection from "@/components/ui/BlogSection";
 import FeaturesSection from "@/components/ui/FeaturesSection";
+import FloatCart from "@/components/ui/FloatCart";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <TopRatedSection />
       <BlogSection />
       <FeaturesSection />
+      <FloatCart />
     </main>
   );
 };
